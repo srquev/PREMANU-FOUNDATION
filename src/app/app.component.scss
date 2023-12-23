@@ -3,16 +3,16 @@
 .headers {
     display: flex;
     justify-content: flex-end;
-    background: #1a4a37;
-    color: #FFF;
-    font-size: 20px;
+    background: #29cb8a;
+    color: #fff;
+    font-size: 18px;
 }
 
 .menu {
     padding: 12px;
     cursor: pointer;
+}
 
-    :hover {
-        color: #ddd;
-    }
+.menu:hover {
+    color: #020e0a;
 }
