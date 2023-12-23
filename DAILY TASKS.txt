@@ -1,0 +1,46 @@
+Hamesh
+1.Create a header with the existing components.
+2. On click of each tab it should load the components.
+3. Continue with Home Tab
+
+
+
+Waseem
+1. About Us Tab
+2. Create a shared/common component if required
+
+
+
+Osama
+1. Our Works
+2. Create a shared/common component if required
+
+
+
+
+Asjad
+1. Our Projects
+
+
+Mahmood
+-------
+
+Naif
+------
+
+
+
+Mentors/Dev ::
+Shadab
+Explore and get some UX
+Better User Experience
+
+Muntazir
+---
+
+Sharique
+explore and get some UX
+Code Review
+Problem Solving
+
+

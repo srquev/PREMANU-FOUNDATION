@@ -1,0 +1,18 @@
+.header-container {}
+
+.headers {
+    display: flex;
+    justify-content: flex-end;
+    background: #1a4a37;
+    color: #FFF;
+    font-size: 20px;
+}
+
+.menu {
+    padding: 12px;
+    cursor: pointer;
+
+    :hover {
+        color: #ddd;
+    }
+}
