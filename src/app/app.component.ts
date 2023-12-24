@@ -14,18 +14,18 @@ export class AppComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.getPremanuData();
+    // this.getPremanuData();
   }
 
   /**
    * @description get all premanu data
    */
-  getPremanuData() {
-    this.premanuService.getPremanuData().subscribe(
-      (data) => {
-        this.premanuService.setAppData(data);
-        console.log(data, '<-premanuu data');
-      }
-    )
-  }
+  // getPremanuData() {
+  //   this.premanuService.getPremanuData().subscribe(
+  //     (data) => {
+  //       this.premanuService.setAppData(data);
+  //       console.log(data, '<-premanuu data');
+  //     }
+  //   )
+  // }
 }

@@ -6,13 +6,14 @@ import { FellowshipComponent } from './components/fellowship/fellowship.componen
 import { OurWorkComponent } from './components/our-work/our-work.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 
+
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'aboutus', component: AboutUsComponent },
   { path: 'fellowship', component: FellowshipComponent },
   { path: 'home', component: HomeComponent },
   { path: 'ourwork', component: OurWorkComponent },
-  { path: 'projects', component: ProjectsComponent },
+  { path: 'projects', component: ProjectsComponent }
 ];
 
 @NgModule({
