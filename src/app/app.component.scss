@@ -1,18 +1,30 @@
-.header-container {}
 
-.headers {
+.header-top-container{
     display: flex;
-    justify-content: flex-end;
-    background: #29cb8a;
-    color: #fff;
-    font-size: 18px;
+    justify-content: space-around;
+    color: #6A6A6A;
+    padding: 8px 0;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.header-bottom-container{
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+    background: white;
+    box-shadow: 0 8px 8px -7px #a5a5a5;
 }
 
 .menu {
-    padding: 12px;
+    padding: 15px 30px;
     cursor: pointer;
+    
 }
 
-.menu:hover {
-    color: #020e0a;
-}
+.pr{padding-right: 10px;}
+.pl{padding-left: 10px;}
+.pt{padding-top: 10px;}
+.pb{padding-bottom: 10px;}
