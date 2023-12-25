@@ -22,7 +22,12 @@
 .menu {
     padding: 15px 30px;
     cursor: pointer;
-    
+}
+
+.menu:hover{
+    background: #ebebeb;
+    color: #026a02;
+    font-weight: bold;
 }
 
 .d-btn{
