@@ -18,8 +18,8 @@ export class HomeComponent implements OnInit {
   * @description get all premanu data
   */
   getPremanuData() {
-    const appData = this.premanuService.getAppData();
-    if (appData.length) {
+    const appData = this.premanuService.getAppData() as any;
+    if (appData.aboutus) {
       console.log(appData, '<- home component - it did not call the api');
     } else {
       //get data from json file

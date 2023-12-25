@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
-const url = '/assets/premanuu-data.json';
+const url = '/assets/premanu-data.json';
 
 @Injectable({
   providedIn: 'root'

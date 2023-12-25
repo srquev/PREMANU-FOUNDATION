@@ -1,25 +1,30 @@
 Hamesh
-1.Create a header with the existing components.
-2. On click of each tab it should load the components.
-3. Continue with Home Tab
+1. Continue with Home Tab
+develop and modify e2e home components.
 
 
 
 Waseem
-1. About Us Tab
-2. Create a shared/common component if required
+1. Continue with FELLOWSHIP Tab 
+develop and modify e2e FELLOWSHIP components.
 
 
 
 Osama
-1. Our Works
-2. Create a shared/common component if required
+1. About Us Tab
+develop and modify e2e about us components. 
 
 
 
 
 Asjad
-1. Our Projects
+1. Our Work
+develop and modify e2e about us components. 
+
+
+Sharique
+1. Continue with Projects tab
+develop and modify e2e about us components. 
 
 
 Mahmood
@@ -32,15 +37,14 @@ Naif
 
 Mentors/Dev ::
 Shadab
-Explore and get some UX
-Better User Experience
+---
 
 Muntazir
 ---
 
 Sharique
-explore and get some UX
-Code Review
+explore and get some UX :: UX is ready to be used.
+Code Review : added service, routing, and json for app data
 Problem Solving
 
 
