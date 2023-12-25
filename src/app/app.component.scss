@@ -12,16 +12,40 @@
 
 .header-bottom-container{
     display: flex;
-    justify-content: center;
-    font-size: 19px;
-    background: white;
+    justify-content: space-around;
+    font-size: 18px;
+    background: #FFF;
     box-shadow: 0 8px 8px -7px #a5a5a5;
+    align-items: baseline;
 }
 
 .menu {
     padding: 15px 30px;
     cursor: pointer;
     
+}
+
+.d-btn{
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    background-color: #71b61b;
+    border-color: #71b61b;
+    color: #FFF;
+    padding: 8px;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.logo{
+    font-weight: bold;
+}
+
+.pm-color{
+    color: #71b61b;
 }
 
 .pr{padding-right: 10px;}
