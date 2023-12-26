@@ -18,13 +18,13 @@ develop and modify e2e about us components.
 
 
 Asjad
-1. Our Work
-develop and modify e2e about us components. 
+1.
 find the copyright free icons for insta, x, linkedin, fb
+post getting the icon replace it with the icon text and made css changes if required
 
 
 Sharique
-1. Continue with Projects tab
+1. Continue with Our Work and Projects tab
 develop and modify e2e about us components. 
 
 
