@@ -9,6 +9,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { FellowshipComponent } from './components/fellowship/fellowship.component';
 import { PremanuService } from './premanu.service';
 import { HttpClientModule } from '@angular/common/http';
+import { GetInvolvedComponent } from './components/get-involved/get-involved.component';
+
 
 
 const components = [
@@ -17,7 +19,8 @@ const components = [
   AboutUsComponent,
   OurWorkComponent,
   ProjectsComponent,
-  FellowshipComponent
+  FellowshipComponent,
+  GetInvolvedComponent
 ];
 
 @NgModule({

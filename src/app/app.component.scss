@@ -10,6 +10,14 @@
     display: flex;
 }
 
+.display-flex img{
+
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
 .header-bottom-container{
     display: flex;
     justify-content: space-around;
