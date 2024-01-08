@@ -8,13 +8,8 @@
     align-content: space-around;
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
+    max-width: 100%;
 
-
-    @media (max-width: 768px) {
-        flex-direction: column;
-        justify-content: center;
-
-      }
 
 }
 .donate-form-container{
@@ -31,7 +26,8 @@
         flex-direction: column;
         background-color: #fff;
         border: 1px solid black;
-        width: 350px;
+        // width: 350px;
+        width: 100%;
         height: auto;
         padding-bottom: 10px;
 
@@ -55,12 +51,13 @@
 
 }
 
-input{
+input {
 
     margin: 10px 30px;
     padding: 5px;
     background-color: #f3f3f3;
     border: 1px solid #b4b1b1;
+
     
 }
 
@@ -131,5 +128,44 @@ p{
         
     
     }
+
 }
+
+    /* Media query for smaller screens */
+    @media only screen and (max-width: 768px) {
+        .get-involved-main-container {
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+    
+    
+        }
+    
+        .donate-form-container,
+        .get-involved-text {
+            width: 100%;
+            max-width: none;
+            margin: 10px;
+        }
+    
+        .input-group {
+            flex-direction: row;
+        
+        }
+
+        p{
+            width: 100%;
+        }
+    
+    }
+
+
+
+
+
+
+
+
+
+
 
