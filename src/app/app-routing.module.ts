@@ -5,15 +5,17 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { FellowshipComponent } from './components/fellowship/fellowship.component';
 import { OurWorkComponent } from './components/our-work/our-work.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { GetInvolvedComponent } from './components/get-involved/get-involved.component'; 
 
 
-const routes: Routes = [
+const routes: Routes = [ 
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'aboutus', component: AboutUsComponent },
   { path: 'fellowship', component: FellowshipComponent },
   { path: 'home', component: HomeComponent },
   { path: 'ourwork', component: OurWorkComponent },
-  { path: 'projects', component: ProjectsComponent }
+  { path: 'projects', component: ProjectsComponent },
+  { path: 'getinvolved', component: GetInvolvedComponent}
 ];
 
 @NgModule({

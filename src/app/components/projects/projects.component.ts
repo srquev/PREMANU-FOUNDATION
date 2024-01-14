@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
 
+  constructor(private router: Router) {}
+
+  navigateToPage(page: string): void {
+    
+    this.router.navigate([`/${page}`]);
+  }
 }
