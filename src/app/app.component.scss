@@ -1,5 +1,4 @@
-
-.header-top-container{
+.header-top-container {
     display: flex;
     justify-content: space-around;
     // color: #6A6A6A;
@@ -8,25 +7,30 @@
     background: #71b61b;
 }
 
-.display-flex{
+.display-flex {
     display: flex;
 }
 
-.display-flex img{
 
+.display-flex img {
     width: 20px;
     height: 20px;
     margin-right: 10px;
     cursor: pointer;
 }
 
-.header-bottom-container{
+.header-bottom-container {
     display: flex;
     justify-content: space-around;
     font-size: 18px;
     background: #FFF;
     box-shadow: 0 8px 8px -7px #a5a5a5;
     align-items: baseline;
+
+    .activated-route {
+        background: #9064bc;
+        color: #FFF;
+    }
 }
 
 .menu {
@@ -34,13 +38,13 @@
     cursor: pointer;
 }
 
-.menu:hover{
+.menu:hover {
     background: #ebebeb;
     color: #026a02;
     font-weight: bold;
 }
 
-.d-btn{
+.d-btn {
     box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
     border-radius: 2px;
     background-color: #71b61b;
@@ -55,16 +59,27 @@
     cursor: pointer;
 }
 
-.logo{
+.logo {
     font-weight: bold;
     cursor: pointer;
 }
 
-.pm-color{
+.pm-color {
     color: #71b61b;
 }
 
-.pr{padding-right: 10px;}
-.pl{padding-left: 10px;}
-.pt{padding-top: 10px;}
-.pb{padding-bottom: 10px;}
+.pr {
+    padding-right: 10px;
+}
+
+.pl {
+    padding-left: 10px;
+}
+
+.pt {
+    padding-top: 10px;
+}
+
+.pb {
+    padding-bottom: 10px;
+}
