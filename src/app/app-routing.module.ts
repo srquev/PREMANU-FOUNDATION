@@ -8,6 +8,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { GetInvolvedComponent } from './components/get-involved/get-involved.component'; 
 
 
+
 const routes: Routes = [ 
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'aboutus', component: AboutUsComponent },
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'ourwork', component: OurWorkComponent },
   { path: 'projects', component: ProjectsComponent },
-  { path: 'getinvolved', component: GetInvolvedComponent}
+  { path: 'getinvolved', component: GetInvolvedComponent},
+  
 ];
 
 @NgModule({
