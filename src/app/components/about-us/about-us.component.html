@@ -1,11 +1,11 @@
-<div class="about-us-container">
+<div *ngIf="!showSpinner  else showSpinnerTemplate" class="about-us-container">
     <!-- Main heading -->
     <h1>About Us</h1>
-    <p>{{allDefinitions}}</p>
+    <p class="m-0 px-15">{{allDefinitions}}</p>
   
     <!-- Vision heading -->
     <h2>Vision</h2>
-    <p>{{allVisions}}</p>
+    <p class="m-0 px-15">{{allVisions}}</p>
   
     <!-- Mission heading -->
     <h2>Mission</h2>
@@ -262,4 +262,8 @@
     
  </div>
 </div>
+
+<ng-template #showSpinnerTemplate>
+  <app-spinner [loading]="showSpinner"></app-spinner>
+</ng-template>
   

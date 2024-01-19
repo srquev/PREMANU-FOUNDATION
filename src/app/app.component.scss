@@ -1,21 +1,20 @@
 .header-top-container {
     display: flex;
     justify-content: space-around;
-    // color: #6A6A6A;
     color: #FFF;
     padding: 8px 0;
     background: #71b61b;
 }
 
-.display-flex {
+.d-flex {
     display: flex;
 }
 
 
-.display-flex img {
+.d-flex img {
     width: 20px;
     height: 20px;
-    margin-right: 10px;
+    padding-right: 10px;
     cursor: pointer;
 }
 
@@ -30,12 +29,21 @@
     .activated-route {
         background: #9064bc;
         color: #FFF;
+        font-weight: normal;
     }
+}
+
+.icon-hamburger-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu {
     padding: 15px 30px;
     cursor: pointer;
+    font-weight: bold;
+    color: #474747;
 }
 
 .menu:hover {
@@ -68,18 +76,34 @@
     color: #71b61b;
 }
 
-.pr {
-    padding-right: 10px;
-}
 
-.pl {
-    padding-left: 10px;
-}
 
-.pt {
-    padding-top: 10px;
-}
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .header-top-container {
+        display: block;
+    }
 
-.pb {
-    padding-bottom: 10px;
+    .mobile-menu-list{
+        background: black;
+        position: absolute;
+        z-index: 9999;
+        width: 100%;
+    }
+
+    .menu{
+        padding: 8px;
+        font-weight: normal;
+        color: #b3b3b3;
+    }
+
+    .icon-container {
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+
+    .email-phone{
+        padding-left: 15px 
+    }
+
 }

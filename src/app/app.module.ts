@@ -10,6 +10,9 @@ import { FellowshipComponent } from './components/fellowship/fellowship.componen
 import { PremanuService } from './premanu.service';
 import { HttpClientModule } from '@angular/common/http';
 import { GetInvolvedComponent } from './components/get-involved/get-involved.component';
+import { SpinnerComponent } from './spinner/spinner.component';
+import { CustomCarouselComponent } from './shared-components/carousel/carousel.component';
+import { HamburgerComponent } from './hamburger/hamburger.component';
 
 
 
@@ -20,12 +23,15 @@ const components = [
   OurWorkComponent,
   ProjectsComponent,
   FellowshipComponent,
-  GetInvolvedComponent
+  GetInvolvedComponent,
+  CustomCarouselComponent
 ];
 
 @NgModule({
   declarations: [
-    ...components
+    ...components,
+    SpinnerComponent,
+    HamburgerComponent
   ],
   imports: [
     BrowserModule,

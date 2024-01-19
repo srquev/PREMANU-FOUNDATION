@@ -1,4 +1,4 @@
-@import './../../../styles.scss';
+@import '/src/styles.scss';
 
 .get-involved-main-container {
     display: flex;
@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: baseline;
     font-family: Arial, sans-serif;
+    gap: 50px;
 }
 
 .donate-form-container {
@@ -34,6 +35,13 @@
             font-weight: bold;
             white-space: nowrap;
             font-family: sans-serif;
+        }
+
+        .form-donate-button:hover {
+            background: none;
+            color: #282828;
+            font-weight: normal;
+            border: 1px solid #71b61b;
         }
     }
 

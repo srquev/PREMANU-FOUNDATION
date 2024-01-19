@@ -1,0 +1,43 @@
+<div>
+    <img 
+    *ngIf="!showHamburger" 
+    (click)="toggleHamburger()" 
+    class="pr-10" 
+    width="25" 
+    height="25"
+    src="assets/images/menu_icon.png" 
+    alt="hamburger">
+
+    <span 
+    *ngIf="showHamburger"
+    (click)="toggleHamburger()" 
+    class="cross-icon"> X 
+    </span>
+</div>
+
+
+<!-- <div class="mobile-container"> -->
+
+<!-- Top Navigation Menu -->
+<!-- <div class="topnav"> -->
+<!-- <a href="#home" class="active">Logo</a> -->
+<!-- <div id="myLinks">
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div> -->
+<!-- <a class="icon"(click)="initializeHamburger()">
+        <span></span>
+      </a> -->
+
+
+<!-- </div> -->
+
+<!-- <div style="padding-left:16px">
+      <h3>Vertical Mobile Navbar</h3>
+      <p>This example demonstrates how a navigation menu on a mobile/smart phone could look like.</p>
+      <p>Click on the hamburger menu (three bars) in the top right corner, to toggle the menu.</p>
+    </div> -->
+
+<!-- End smartphone / tablet look -->
+<!-- </div> -->
