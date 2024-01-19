@@ -13,8 +13,8 @@
         <div><img src="assets/images/social-media-icon/twitter.png" alt="twitter"></div>
       </div>
       <!--for smaller devices display hamburger-->
-      <!-- *ngIf="deviceWidth < 768" -->
       <app-hamburger 
+      *ngIf="deviceWidth < 768"
       (hamBurgerAction)="hamBurgerEvent($event)"
       ></app-hamburger>
 
