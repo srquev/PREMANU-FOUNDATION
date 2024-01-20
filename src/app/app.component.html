@@ -16,6 +16,7 @@
       <app-hamburger 
       *ngIf="deviceWidth < 768"
       (hamBurgerAction)="hamBurgerEvent($event)"
+      [showHamburger]="toggleMenuList"
       ></app-hamburger>
 
     </div>
@@ -23,7 +24,7 @@
 
 
   <div *ngIf="deviceWidth> 768" class="header-bottom-container">
-    <div class="logo pm-color" [routerLink]="['/home']">PREMANU</div>
+    <div class="logo pm-color" [routerLink]="['/home']">PREMANU FOUNDATION</div>
     <div class="d-flex">
       <div class="menu" [routerLink]="['/home']" [routerLinkActive]="['activated-route']">Home</div>
       <div class="menu" [routerLink]="['/projects']" [routerLinkActive]="['activated-route']">Projects</div>
@@ -37,12 +38,12 @@
 
   <!-- ham burger -->
   <div *ngIf="toggleMenuList" class="mobile-menu-list">
-    <div class="menu" [routerLink]="['/home']" [routerLinkActive]="['activated-route']">Home</div>
-    <div class="menu" [routerLink]="['/projects']" [routerLinkActive]="['activated-route']">Projects</div>
-    <div class="menu" [routerLink]="['/fellowship']" [routerLinkActive]="['activated-route']">Fellowship</div>
-    <div class="menu" [routerLink]="['/ourwork']" [routerLinkActive]="['activated-route']">Our Work</div>
-    <div class="menu" [routerLink]="['/aboutus']" [routerLinkActive]="['activated-route']">About Us</div>
-    <div class="menu" [routerLink]="['/getinvolved']" [routerLinkActive]="['activated-route']">Get Involved</div>
+    <div class="menu"  (click)="toggleMenuList = false" [routerLink]="['/home']">Home</div>
+    <div class="menu"  (click)="toggleMenuList = false" [routerLink]="['/projects']">Projects</div>
+    <div class="menu"  (click)="toggleMenuList = false" [routerLink]="['/fellowship']">Fellowship</div>
+    <div class="menu"  (click)="toggleMenuList = false" [routerLink]="['/ourwork']">Our Work</div>
+    <div class="menu"  (click)="toggleMenuList = false" [routerLink]="['/aboutus']">About Us</div>
+    <div class="menu"  (click)="toggleMenuList = false" [routerLink]="['/getinvolved']">Get Involved</div>
   </div>
 
   <!-- <ng-container *ngIf="deviceWidth<768">
