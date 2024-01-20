@@ -68,7 +68,7 @@
 }
 
 .logo {
-    font-weight: bold;
+    // font-weight: bold;
     cursor: pointer;
 }
 
@@ -92,6 +92,12 @@
     }
 
     .menu{
+        padding: 8px;
+        font-weight: normal;
+        color: #b3b3b3;
+    }
+
+    .menu:hover {
         padding: 8px;
         font-weight: normal;
         color: #b3b3b3;

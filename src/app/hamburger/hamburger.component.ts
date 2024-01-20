@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { AfterViewInit, Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { assertIsDefined } from '../assert';
 
 @Component({
@@ -7,7 +7,7 @@ import { assertIsDefined } from '../assert';
   styleUrls: ['./hamburger.component.scss']
 })
 export class HamburgerComponent implements OnInit, AfterViewInit {
-  showHamburger: boolean = false;
+  @Input() showHamburger: boolean = false;
   @Output() hamBurgerAction: EventEmitter<boolean> = new EventEmitter()
 
   constructor() { }

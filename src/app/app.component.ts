@@ -17,7 +17,8 @@ export class AppComponent implements OnInit, AfterViewInit {
 
 
   ngAfterViewInit(): void {
-    this.deviceWidth = this.rendrer.parentNode(this.element.nativeElement).ownerDocument.defaultView.innerWidth
+    this.deviceWidth = this.rendrer.parentNode(this.element.nativeElement).ownerDocument.defaultView.innerWidth;
+    console.log(this.deviceWidth, 'device width')
   }
 
 
@@ -33,6 +34,10 @@ export class AppComponent implements OnInit, AfterViewInit {
   hamBurgerEvent(event: any){
     this.toggleMenuList = event;
     console.log(event,'event type');
+  }
+
+  listItemAction(){
+    this.toggleMenuList = false;
   }
 
   /**
