@@ -5,4 +5,4 @@ export type AppData = {
     projects: any;
     fellowship: any;
     donateNow: any;
-} | null
+}

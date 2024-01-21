@@ -3,3 +3,31 @@ body{
     margin: 0;
    background-color: #f7f7ff !important;
 }
+
+.display-flex{
+    display: flex;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.flex-direction-column{
+    flex-direction: column;
+}
+
+.flex-direction-row{
+    flex-direction: row;
+}
+
+.pb{
+    padding-bottom: 15px;
+}
+
+.pt{
+    padding-top: 10px;
+}
+
+.mt-0{
+    margin-top: 0;
+}
