@@ -1,35 +1,54 @@
 <div class="header">
 
-    <div class="header-top-container">
-      <div class="display-flex">
-        <div class="pr">premanu@gmail.com</div>
-        <div class="pl">+123 987 887 765</div>
-      </div>
-      <div class="display-flex">
+  <div class="header-top-container">
+    <div class="email-phone d-flex">
+      <div class="pr-10">premanu@gmail.com</div>
+      <div class="pl-10">+91 90158 35019</div>
+    </div>
+    <div class="icon-hamburger-container">
+      <div class="icon-container d-flex">
         <div> <img src="assets/images/social-media-icon/facebook.png" alt="Facebook"> </div>
         <div><img src="assets/images/social-media-icon/instagram.png" alt="Instagram"></div>
         <div><img src="assets/images/social-media-icon/linkedin.png" alt="linkedin"></div>
         <div><img src="assets/images/social-media-icon/twitter.png" alt="twitter"></div>
-      
       </div>
+      <!--for smaller devices display hamburger-->
+      <app-hamburger 
+      *ngIf="deviceWidth < 768"
+      (hamBurgerAction)="hamBurgerEvent($event)"
+      [showHamburger]="toggleMenuList"
+      ></app-hamburger>
+
     </div>
+  </div>
 
 
-  <div class="header-bottom-container">
-  
-    <div class="logo pm-color" [routerLink]="['/home']">PREMANU</div>
-    <div class="display-flex">
+  <div *ngIf="deviceWidth> 768" class="header-bottom-container">
+    <div class="logo pm-color" [routerLink]="['/home']">PREMANU FOUNDATION</div>
+    <div class="d-flex">
       <div class="menu" [routerLink]="['/home']" [routerLinkActive]="['activated-route']">Home</div>
       <div class="menu" [routerLink]="['/projects']" [routerLinkActive]="['activated-route']">Projects</div>
       <div class="menu" [routerLink]="['/fellowship']" [routerLinkActive]="['activated-route']">Fellowship</div>
       <div class="menu" [routerLink]="['/ourwork']" [routerLinkActive]="['activated-route']">Our Work</div>
       <div class="menu" [routerLink]="['/aboutus']" [routerLinkActive]="['activated-route']">About Us</div>
       <div class="menu" [routerLink]="['/getinvolved']" [routerLinkActive]="['activated-route']">Get Involved</div>
-
     </div>
-  
-    <!-- <div class="donate-btn" [routerLink]="['/getinvolved']"><button class="d-btn">Get Involved</button></div> -->
   </div>
+
+
+  <!-- ham burger -->
+  <div *ngIf="toggleMenuList" class="mobile-menu-list">
+    <div class="menu"  (click)="toggleMenuList = false" [routerLink]="['/home']">Home</div>
+    <div class="menu"  (click)="toggleMenuList = false" [routerLink]="['/projects']">Projects</div>
+    <div class="menu"  (click)="toggleMenuList = false" [routerLink]="['/fellowship']">Fellowship</div>
+    <div class="menu"  (click)="toggleMenuList = false" [routerLink]="['/ourwork']">Our Work</div>
+    <div class="menu"  (click)="toggleMenuList = false" [routerLink]="['/aboutus']">About Us</div>
+    <div class="menu"  (click)="toggleMenuList = false" [routerLink]="['/getinvolved']">Get Involved</div>
+  </div>
+
+  <!-- <ng-container *ngIf="deviceWidth<768">
+    <app-hamburger></app-hamburger>
+  </ng-container> -->
 </div>
 
 

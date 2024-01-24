@@ -11,6 +11,7 @@ export class AboutUsComponent implements OnInit{
   allMissions: any;
   allDefinitions: any;
   allVisions: any;
+  public showSpinner = false;
   constructor(private pmService: PremanuService) { }
 
   ngOnInit(){
@@ -21,8 +22,10 @@ export class AboutUsComponent implements OnInit{
   * @description get all premanu data
   */
   getPremanuData() {
+    this.showSpinner = true;
     const appData = this.pmService.getAppData() as any;
     if(appData.aboutus){
+      this.showSpinner = false;
       this.appData = appData;
       this.allMissions = appData.aboutus.missions;
       this.allDefinitions = appData.aboutus.definition;
@@ -30,6 +33,7 @@ export class AboutUsComponent implements OnInit{
       console.log(appData, '<- data is available in about us component')
     } else {
       this.pmService.getPremanuData().subscribe((data:any)=> {
+        this.showSpinner = false;
         this.appData = data;
         this.allMissions = data.aboutus.missions;
         this.allDefinitions = data.aboutus.definition;
